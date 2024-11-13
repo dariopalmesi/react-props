@@ -1,14 +1,16 @@
-import CardImage from '../../assets/img/487c8193-0cce-4b89-aee2-74f2574abeb6.webp'
+
 import Button from '../Button/Button'
 
 
-export default function CardBlog() {
+export default function CardBlog({ posts }) {
     return (
         <div className="card-blog">
-            <img src={CardImage} alt="" />
+            <img src={posts.image} alt="" />
             <div className="diteils">
-                <h3>Il mio Mac</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem doloribus distinctio expedita iusto in fugit alias at dolore, perspiciatis omnis minus ex. Culpa ut et necessitatibus. Itaque harum aliquam esse!</p>
+                <h3>{posts.title}</h3>
+                <p>{posts.content}</p>
+                <p>{posts.tags}</p>
+                <p>{posts.published}</p>
                 <Button />
             </div>
         </div>
