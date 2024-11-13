@@ -1,11 +1,11 @@
 import posts from '../data/Posts.js'
 import CardBlog from './CardBlog/CardBlog'
 
-export default function () {
+export default function AppMain() {
     return (
         <main>
             <div className="container">
-                {posts.map(post => <CardBlog key={post.id} posts={posts} />)}
+                {posts.map(post => <CardBlog key={post.id} post={posts} />)}
             </div>
         </main>
     )
