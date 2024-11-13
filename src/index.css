@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    min-width: calc(100vh - 64px);
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: burlywood;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+main {
+    background-color: chocolate;
+
+    h3 {
+        padding: 1rem 0rem;
+    }
+
+    p {
+        padding: 1rem 0rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+}
+
+footer {
+    background-color: gray;
+    padding: 1rem;
+    text-align: center;
+}
